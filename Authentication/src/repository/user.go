@@ -1,13 +1,13 @@
 package repository
 
 import (
-	"database/sql"
-
 	"authentication/src/model"
+	"fmt"
 )
 
 func SaveUser(user model.User) (error){
 	result, err := db.Exec("insert into securitydb.Users (id, login, encryptedPassword) values (?, ?, ?)", user.Id, user.Login, user.EncryptedPassword)
+	fmt.Printf("result: %v\n", result)
 	return err;
 }
 
