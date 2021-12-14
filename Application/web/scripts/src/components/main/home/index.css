@@ -1,0 +1,224 @@
+.hello-advantages{
+    float: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: url('images/advantage.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+}
+.hello-advantages h1{
+    font-family: Train One;
+    font-size: 60px;
+    padding: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.advantages{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.advantage{
+    width: 40%;
+}
+
+.advantage-list-dark{
+    content: url('images/advantage-list-dark.png');
+    width: 3%;
+    display: inline;
+}
+
+.advantage-list-light{
+    content: url('images/advantage-list-light.png');
+    width: 3%;
+    display: inline;
+}
+
+.junior-description{
+    background-color: #FFA000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.junior-description .description-container{
+    width: 40%;
+    margin: 3% 5%;
+    border: 3px black solid;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.junior-description .description-container h1{
+    font-family: Train One;
+    font-size: 3em;
+    margin: 1% 3%;
+}
+
+.junior-point-dark{
+    content: url('images/junior-point-dark.png');
+    width: 5%;
+    display: inline;
+}
+
+.youth-description{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #9A7A53;
+    font-size: 20px;
+    padding: 4%;
+}
+
+.youth-description .left-block{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: 1%;
+}
+
+.youth-description .left-block .description-container{
+    margin-top: 60px;
+    border: 3px #FF6D36 solid;
+    background-color: #FBE6D6;
+}
+
+.youth-description .right-block{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin-bottom: 1%;
+}
+
+.youth-description .right-block .description-container{
+    margin-bottom: 60px;
+    border: 3px #FF6D36 solid;
+    background-color: #FBE6D6;
+}
+
+.youth-description h1 {
+    font-family: Press Start;
+    font-size: 60px;
+    text-align: center;
+    color: #003958;
+    margin-bottom: 5%;
+    background-image: url('images/8kl_back.png');
+    background-size: 80%;;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.youth-description-img{
+    content: url('images/8-9bg.png');
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+}
+
+.youth-senior-back{
+    content: url('images/youth-senior-back.png');
+    width: 100%;
+}
+
+.senior-description-header {
+    justify-content: space-around;
+    background-color: #1e3d59;
+    padding: 3%;
+}
+
+.senior-description {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #1e3d59;
+}
+
+.senior-description .left-block{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.senior-description .left-block .description-container{
+    margin-bottom: 20px;
+    border: 3px #9A7A53 solid;
+    background-color: #fce7d8;
+    color: #1e3d59;
+    font-size: 20px;
+    padding: 3%;
+}
+
+.senior-description .middle-block{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.senior-description .middle-block .description-container-top{
+    margin-bottom: 20px;
+    background-color: #9A7A53;
+    color: #1e3d59;
+    font-size: 20px;
+    padding: 3%;
+}
+
+.senior-description .middle-block .description-container-bottom{
+    margin-bottom: 20px;
+    border: 3px #FFA000 solid;
+    background-color: #FBE6D6;
+    color: #1e3d59;
+    font-size: 20px;
+    padding: 3%;
+}
+
+.senior-description .right-block{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.senior-description .right-block .description-container{
+    margin-bottom: 20px;
+    color: #FBE6D6;
+    font-size: 26px;
+    padding: 3%;
+}
+
+.senior-description-header .senior-greeting h1 {
+    font-family: Jura;
+    font-size: 80px;
+    text-align: center;
+    color: #FFA000;
+    flex-wrap: nowrap;
+}
+
+.senior-description h2 {
+    font-family: Montserrat;
+    font-size: 30px;
+    text-align: center;
+    color: #FBE6D6;
+}
+
+.senior-img-study{
+    content: url('images/senior-icon.png');
+    width: 100%;
+}
+
+.senior-img-footer{
+    content: url('images/senior-footer.png');
+    width: 100%;
+    background-color: #FBE6D6;
+}
+
+.stat-img{
+    content: url('images/stat-page.png');
+    width:100%;
+}

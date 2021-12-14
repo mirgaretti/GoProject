@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    height: 250px;
+    background-color: #1e3d59;
+}
+.main-heading{
+    text-align: center;
+} 
+
+.brain-zone-logo {
+    border: none;
+    padding: 30px;
+    width: 10%;
+    float: left;
+}
+
+.header-button{
+    display:flex;
+    border: none;
+    padding: 15px 10px;
+    width: fit-content;
+    height: 65%;
+    align-items: flex-end;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: baseline;
+}
+
+.stage-navbar{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-self: start;
+    align-self: flex-end;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.button-stage{
+    text-align: center;
+    width: 90%;
+    margin: 0 10px;
+}
+
+.header-icon {
+    width: 7em;
+}
