@@ -1,6 +1,7 @@
 package model
 
 type Task struct {
+	Id string `json:"id"`
 	Label string `json:"label"`
 	TopicLabel string
 	Text string `json:"text"`

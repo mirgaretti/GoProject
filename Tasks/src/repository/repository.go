@@ -20,11 +20,11 @@ func init() {
 }
 
 func GetTasksByTopicLabel(topicLabel string) ([]model.Task, error){
-	rows, err := db.Query("select * from tasksdb.Tasks where topicLabel = ?", topicLabel)
+	rows, err := db.Query("select (id, label, text, rating) from tasksdb.Tasks where topicLabel = ?", topicLabel)
 	var tasks []model.Task
 	for rows.Next(){
 		task := model.Task{}
-		err := rows.Scan(task.Label, task.Text, task.Rating)
+		err := rows.Scan(&task.Id, &task.Label, &task.Text, &task.Rating)
 		if err != nil{
 			continue
 		}
@@ -41,7 +41,7 @@ func GetTopicsByClassLabel(classLabel int16) ([]model.Topic, error){
 	var topics []model.Topic
 	for rows.Next(){
 		topic := model.Topic{}
-		err := rows.Scan(topic.Label, topic.Description)
+		err := rows.Scan(&topic.Label, &topic.Description)
 		if err != nil{
 			continue
 		}
@@ -59,7 +59,7 @@ func GetAllClasses() ([]model.Class, error){
 	var classes []model.Class
 	for rows.Next(){
 		class := model.Class{}
-		err := rows.Scan(class.Label, class.Description)
+		err := rows.Scan(&class.Label, &class.Description)
 		if err != nil{
 			continue
 		}
