@@ -9,6 +9,7 @@ import (
 func main() {
 	e := echo.New()
 	e.POST("/login", handler.LoginHandler)
+	e.GET("/validateToken", handler.ValidateTokenHandler)
 	e.POST("/register", handler.RegisterHandler)
-	e.Logger.Fatal(e.Start(":1323"))
+	e.Logger.Fatal(e.Start(":1324"))
 }

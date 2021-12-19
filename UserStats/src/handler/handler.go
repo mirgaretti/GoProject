@@ -1,16 +1,19 @@
 package handler
 
 import (
+	"strings"
 	"net/http"
 	"userStats/src/model"
 	"userStats/src/repository"
+	"userStats/src/httpClient"
 
 	"github.com/labstack/echo/v4"
 )
 
 func GetUserHandler(c echo.Context) error {
-	apikey := c.Request().Header.Get("X-API-KEY")
-	if apikey != "8f9c9f1d-860e-4665-9b16-14b2b462e2b2" {
+	var authResponse model.AuthResponse
+	httpClient.GetJson(strings.ReplaceAll("http://localhost:1324?accessToken={accessToken}", "{accessToken}", request.AccessToken), authResponse)
+	if authResponse != "valid" {
 		response := model.ResponseDto {
 			Message: "Unauthorized request",
 		}
@@ -46,8 +49,9 @@ func GetTopHandler(c echo.Context) error {
 }
 
 func TaskUserHandler(c echo.Context) error {
-	apikey := c.Request().Header.Get("X-API-KEY")
-	if apikey != "8f9c9f1d-860e-4665-9b16-14b2b462e2b2" {
+	var authResponse model.AuthResponse
+	httpClient.GetJson(strings.ReplaceAll("http://localhost:1324?accessToken={accessToken}", "{accessToken}", request.AccessToken), authResponse)
+	if authResponse != "valid" {
 		response := model.ResponseDto {
 			Message: "Unauthorized request",
 		}

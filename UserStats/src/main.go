@@ -12,5 +12,5 @@ func main() {
 	e.GET("/top", handler.GetTopHandler)
 	e.POST("/user", handler.TaskUserHandler)
 	e.POST("/user/add", handler.AddUserHandler)
-	e.Logger.Fatal(e.Start(":1323"))
+	e.Logger.Fatal(e.Start(":1326"))
 }

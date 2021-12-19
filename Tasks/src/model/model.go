@@ -26,3 +26,13 @@ type ResponseDto struct {
 	Message string `json:"message"`
 	Classes []Class `json:"classes"`
 }
+
+type Request struct {
+	AccessToken string `params="accessToken"`
+}
+
+type AuthResponse struct {
+	Message string `json:"message"`
+	UserId string `json:"userId"`
+	AccessToken string `json:"accessToken"`
+}
