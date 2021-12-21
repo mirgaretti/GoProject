@@ -51,7 +51,7 @@ func LoginHandler(c echo.Context) error {
 	}
 	response := model.ResponseDto{
 		UserId: user.Id,
-		AccessToken: "",
+		AccessToken: session.AccessToken,
 		Message: "Success",
 	}
 	return c.JSON(http.StatusOK, response)
