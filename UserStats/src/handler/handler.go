@@ -76,8 +76,9 @@ func TaskUserHandler(c echo.Context) error {
 }
 
 func AddUserHandler(c echo.Context) error {
-	apikey := c.Request().Header.Get("X-API-KEY")
-	if apikey != "8f9c9f1d-860e-4665-9b16-14b2b462e2b2" {
+	var authResponse model.AuthResponse
+	httpClient.GetJson(strings.ReplaceAll("http://localhost:1324?accessToken={accessToken}", "{accessToken}", request.AccessToken), authResponse)
+	if authResponse != "valid" {
 		response := model.ResponseDto {
 			Message: "Unauthorized request",
 		}

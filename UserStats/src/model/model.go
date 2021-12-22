@@ -16,6 +16,7 @@ type RequestDto struct {
 	UserId string `params:"id" json:"id"`
 	RatingPoints int `json:"ratingPoints"`
 	TaskId string `json:"solvedTaskId"`
+	AccessToken string `params:"token" json:"accessToken"`
 }
 
 type AuthResponse struct {
